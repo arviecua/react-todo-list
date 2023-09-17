@@ -46,7 +46,7 @@ export default function App() {
     <>
       <form onSubmit={handleSubmit} className="new-item-form">
         <div className="form-row">
-          {message != "" && <p>{message}</p>}
+          {message && <p>{message}</p>}
           <label htmlFor="item">New Item</label>
           <input
             value={newItem}
